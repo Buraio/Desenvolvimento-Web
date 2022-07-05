@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Pesquisa de satisfação</title>
+</head>
+<body>
+        <img class="fundo" src="shopping.jpg">
+        <div class="back"></div>
+    <!--Heading 1-->
+    <header class="title"> <!--header = cabeçalho-->
+        <h1>Pesquisa de Satisfação</h1>
+        <p class="description"><span style="font-style:normal;">❤️</span>Nos dê seu feedback para que possamos melhorar nosso serviço!!!</p>
+    </header>
+    <main>
+        <!--Caixa do formulário-->
+        <form id="pesquisa">
+            <div class="border">
+                <fieldset>
+                    <legend>Qual seu nível de satisfação com o produto?</legend>
+                    <div class="questao">
+                        <input type="radio" class="produto" name="produto" value="0">
+                        <label for="produto">Insatisfeito</label>
+                    </div>
+                    <div class="questao">
+                        <input type="radio" class="produto" name="produto" value="1">
+                        <label for="produto">Pouco satisfeito</label>
+                    </div>
+                    <div class="questao">
+                        <input type="radio" class="produto" name="produto" value="2">
+                        <label for="produto">Satisfeito</label>
+                    </div>
+                    <div class="questao">
+                        <input type="radio" class="produto" name="produto" value="3">
+                        <label for="produto">Muito satisfeito</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Qual seu nível de satisfação com nossa loja?</legend>
+                    <div class="questao">
+                        <input type="radio" class="loja" name="loja" value="0">
+                        <label for="loja">Insatisfeito</label>
+                    </div>
+                    <div class="questao">
+                        <input type="radio" class="loja" name="loja" value="1">
+                        <label for="loja">Pouco satisfeito</label>
+                    </div>
+                    <div class="questao">
+                        <input type="radio" class="loja" name="loja" value="2">
+                        <label for="loja">Satisfeito</label>
+                    </div>
+                    <div class="questao">
+                        <input type="radio" class="loja" name="loja" value="3">
+                        <label for="loja">Muito satisfeito</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>O produto chegou no tempo esperado?</legend>
+                    <div class="questao">
+                        <input type="radio" class="tempo" name="entrega" value="0">
+                        <label for="tempo">Atrasado</label>
+                    </div>
+                    <div class="questao">
+                        <input type="radio" class="tempo" name="entrega" value="Esperado">
+                        <label for="tempo">No tempo esperado</label>
+                    </div>
+                    <div class="questao">
+                        <input type="radio" class="tempo" name="entrega" value="Antes">
+                        <label for="tempo">Adiantado</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Como podemos melhorar nosso serviço online? Nos conte!<span style="font-size:16px;">(Opcional)</span></legend>
+                    <textarea id="sugestion" name="sugestion"></textarea>
+                    <label for="sugestion"></label>
+                </fieldset>
+                <input id="submit" type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p class="author">Made by <em>Bryan Silva</em> 🙃 | <a>Github</a> | <a>LinkedIn</a></p>
+    </footer>
+</body>
+</html>

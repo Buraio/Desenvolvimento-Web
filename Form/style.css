@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family:'Roboto Mono', monospace;
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.fundo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(140, 0, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    margin: 0 auto;
+}
+
+#pesquisa {
+    margin: 0 auto;
+    width: 670px;
+    height: auto;
+    background: linear-gradient(180deg,#ff2525, #ff15ff);
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px rgba(0,0,0,0.7);
+    padding: 15px 10px;
+    border: black 1px solid;
+    margin-top: 15px;
+    opacity: 90%;
+}
+
+#pesquisa, .border, fieldset {
+    display: flex;
+    justify-content: center; /*horizontal*/
+    flex-direction: column;
+    padding: 15px;
+}
+
+fieldset {
+    align-items: flex-start;
+    border: none;
+    margin: 3px;
+}
+
+.questao {
+    display: flex;
+    align-items: center;
+}
+
+.border {
+    width: 100%;
+    height: 100%;
+    border: 2px purple solid;
+    margin: 0 auto;
+    border-radius: 10px; 
+}
+
+.produto,
+.loja,
+.tempo {
+    margin: 10px;
+}
+
+#sugestion {
+    width: 100%;
+    box-shadow: 1px 1px 1px black;
+    border-radius: 5px;
+}
+
+h1, p {
+    text-align: center;
+    width: 590px;
+    position: relative;
+    margin: 5px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Pacifico';
+}
+
+.description {
+    font-style: italic;
+}
+
+.author {
+    margin: 0 auto;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#submit {
+    margin: 0 auto;
+    font-size: 22px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: pink;
+}
+
+@media (max-width: 720px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #pesquisa {
+        width: 550px;
+    }
+
+    .author {
+        padding: 5px;
+    }
+}
